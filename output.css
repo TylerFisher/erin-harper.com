@@ -513,12 +513,25 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .flex {
@@ -545,12 +558,20 @@ video {
   width: 100%;
 }
 
+.max-w-7xl {
+  max-width: 80rem;
+}
+
 .flex-row {
   flex-direction: row;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .items-center {

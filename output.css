@@ -518,10 +518,6 @@ video {
   margin-right: auto;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -536,10 +532,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-fit {
@@ -571,28 +563,12 @@ video {
   flex-wrap: nowrap;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .border-b {
@@ -604,37 +580,14 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pt-4 {
@@ -643,10 +596,6 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .text-right {
@@ -675,11 +624,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -692,34 +636,6 @@ video {
   font-style: italic;
 }
 
-.leading-snug {
-  line-height: 1.375;
-}
-
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-loose {
-  line-height: 2;
-}
-
-.tracking-tighter {
-  letter-spacing: -0.05em;
-}
-
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -729,9 +645,61 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+/* work-sans-700 - latin */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'Work Sans';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url('./fonts/work-sans-v18-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('./fonts/work-sans-v18-latin-700.woff') format('woff');
+
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* eb-garamond-regular - latin */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'EB Garamond';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url('./fonts/eb-garamond-v26-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('./fonts/eb-garamond-v26-latin-regular.woff') format('woff');
+
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* eb-garamond-italic - latin */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'EB Garamond';
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  src: url('./fonts/eb-garamond-v26-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('./fonts/eb-garamond-v26-latin-italic.woff') format('woff');
+
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @media (min-width: 768px) {
@@ -744,31 +712,9 @@ video {
     line-height: 2.5rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:leading-loose {
-    line-height: 2;
-  }
-
-  .md\:leading-normal {
-    line-height: 1.5;
-  }
-
-  .md\:leading-tight {
-    line-height: 1.25;
   }
 
   .md\:leading-snug {
@@ -789,16 +735,8 @@ video {
     width: 40%;
   }
 
-  .lg\:pb-0 {
-    padding-bottom: 0px;
-  }
-
   .lg\:pr-8 {
     padding-right: 2rem;
-  }
-
-  .lg\:pb-16 {
-    padding-bottom: 4rem;
   }
 
   .lg\:pl-8 {

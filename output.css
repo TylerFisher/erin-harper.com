@@ -648,7 +648,7 @@ video {
 /* work-sans-700 - latin */
 
 @font-face {
-  font-display: swap;
+  font-display: optional;
 
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 
@@ -667,7 +667,7 @@ video {
 /* eb-garamond-regular - latin */
 
 @font-face {
-  font-display: swap;
+  font-display: optional;
 
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 
@@ -686,7 +686,7 @@ video {
 /* eb-garamond-italic - latin */
 
 @font-face {
-  font-display: swap;
+  font-display: optional;
 
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 
@@ -700,11 +700,6 @@ video {
        url('./fonts/eb-garamond-v26-latin-italic.woff') format('woff');
 
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-html {
-  visibility: visible;
-  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -747,4 +742,4 @@ html {
   .lg\:pl-8 {
     padding-left: 2rem;
   }
-} 
+}

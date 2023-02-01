@@ -530,6 +530,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -537,10 +541,6 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-full {
@@ -700,6 +700,11 @@ video {
        url('./fonts/eb-garamond-v26-latin-italic.woff') format('woff');
 
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
